@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "SteamClient from node-steam with proper versioning and more features",
 	"keywords": ["steam", "steam client"],
+	"main": "./lib/cm_client.js",
 	"homepage": "https://github.com/DoctorMcKay/node-steam-client",
 	"bugs": {
 		"url": "https://github.com/DoctorMcKay/node-steam-client/issues"
