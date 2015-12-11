@@ -1,0 +1,35 @@
+{
+	"name": "steam-client",
+	"version": "1.0.0",
+	"description": "SteamClient from node-steam with proper versioning and more features",
+	"keywords": ["steam", "steam client"],
+	"homepage": "https://github.com/DoctorMcKay/node-steam-client",
+	"bugs": {
+		"url": "https://github.com/DoctorMcKay/node-steam-client/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Alexander Corn",
+		"email": "mckay@doctormckay.com",
+		"url": "https://www.doctormckay.com"
+	},
+	"contributors": [
+		{
+			"name": "Nicholas",
+			"email": "vvnicholas@gmail.com"
+		}
+	],
+	"dependencies": {
+		"adm-zip": "^0.4.0",
+		"buffer-crc32": "^0.2.0",
+		"bytebuffer": "^5.0.0",
+		"steam-crypto": "^0.0.1",
+		"steam-resources": "seishun/node-steam-resources#v1.0.0"
+	},
+	"bundledDependencies": [
+		"steam-resources"
+	],
+	"engines": {
+		"node": ">=4.1.1"
+	}
+}
