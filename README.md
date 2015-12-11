@@ -48,6 +48,19 @@ steamClient.on('connected', function() {
 steamClient.on('logOnResponse', function(details) { /* ... */});
 ```
 
+# Constructor
+
+The constructor takes one argument: the protocol to use to connect to Steam. This should be a value from
+[`EConnectionProtocol`](https://github.com/DoctorMcKay/node-steam-client/blob/master/index.js#L25).
+Default is TCP. Currently only TCP is supported.
+
+Example:
+
+```js
+var Steam = require('steam-client');
+var client = new Steam.CMClient(Steam.EConnectionProtocol.TCP);
+```
+
 # Servers
 
 `Steam.servers` contains the list of CM servers that `CMClient` will attempt to connect to. The bootstrapped list is not
