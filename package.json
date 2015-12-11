@@ -19,6 +19,10 @@
 			"email": "vvnicholas@gmail.com"
 		}
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DoctorMcKay/node-steam-client.git"
+	},
 	"dependencies": {
 		"adm-zip": "^0.4.0",
 		"buffer-crc32": "^0.2.0",
