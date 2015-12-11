@@ -9,6 +9,12 @@
 This is a fork of [node-steam](https://www.npmjs.com/package/steam)' SteamClient. Essentially it's node-steam without
 the handler modules and with some more features. It should be compatible with all node-steam handler modules.
 
+This exists because of how painfully slow it is to get new things implemented into node-steam, and also because of
+incompatibilities that can potentially arise between node-steam and third-party handler modules.
+
+Protocol version bumps will always be major module releases. You're highly recommended to pin the major version in your
+dependencies (e.g. `"steam-client": "^1.0.0"`).
+
 **Requires Node.js v4.1.1 or later.**
 
 # Installation
@@ -178,4 +184,3 @@ You were logged off from Steam. [`loggedOn`](#loggedon) is now `false`.
 - `callback` - If set, then this message is a request and Steam expects a response back from you. To respond, call this callback instead of using `send()`.
 
  Emitted when you receive a message from the CM.
- 
