@@ -23,7 +23,8 @@ Steam._processProto = function(proto) {
  * @enum EConnectionProtocol
  */
 Steam.EConnectionProtocol = {
-	"TCP": 1
+	"TCP": 1,
+	"UDP": 2
 };
 
 require('./lib/cm_client.js');
