@@ -40,11 +40,12 @@ Then you'll want to create an instance of CMClient and any handlers you need (ex
 var steamClient = new Steam.CMClient();
 steamClient.connect();
 steamClient.on('connected', function() {
-  steamClient.logOn({
-    "account_name": "username",
-    "password": "password"
-  });
+    steamClient.logOn({
+        "account_name": "username",
+        "password": "password"
+    });
 });
+
 steamClient.on('logOnResponse', function(details) { /* ... */});
 ```
 
@@ -52,7 +53,19 @@ steamClient.on('logOnResponse', function(details) { /* ... */});
 
 The constructor takes one argument: the protocol to use to connect to Steam. This should be a value from
 [`EConnectionProtocol`](https://github.com/DoctorMcKay/node-steam-client/blob/master/index.js#L25).
-Default is TCP. Currently only TCP is supported.
+Default is TCP. **UDP support is experimental.** There are some pros and cons to each:
+
+- TCP
+    - **Pro:** Operating system manages the connection, so you will automatically disconnect if your app crashes or is killed
+    - **Con:** Less fine control over the connection. It's up to the OS to detect poor network conditions and kill the connection
+- UDP
+    - **Pro:** Finer control over the connection. Able to tear down a broken connection faster in cases where the OS wouldn't detect it
+    - **Pro:** Gives you access to the server load of the CM you connected to
+    - **Con:** If your app crashes or is killed without properly logging off or disconnecting, your session will remain active for a minute while Steam waits for it to timeout
+    - **Con:** Currently support for UDP connections in `CMClient` is experimental
+
+Note that UDP connections use Valve-brand UDP, which is essentially TCP over UDP. Consequently, network unreliability
+is not a concern when using UDP.
 
 Example:
 
@@ -168,6 +181,7 @@ Connection closed by the server. Only emitted if the encryption handshake is com
 automatically (unless you disabled `autoRetry`). [`loggedOn`](#loggedon) is now `false`.
 
 ### connected
+- `serverLoad` - The load value of the CM server you're connected to. Only available if you're connecting using UDP. It's unclear at this time what scale this value uses.
 
 Encryption handshake complete. From now on, it's your responsibility to handle disconnections and reconnect
 (see [`error`](#error)). You'll likely want to [log on](#logondetails) now.

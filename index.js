@@ -19,7 +19,7 @@ Steam._processProto = function(proto) {
 };
 
 /**
- * Protocols we can use to connect to a Steam CM. Currently only TCP is supported.
+ * Protocols we can use to connect to a Steam CM.
  * @enum EConnectionProtocol
  */
 Steam.EConnectionProtocol = {
