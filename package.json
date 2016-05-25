@@ -1,6 +1,6 @@
 {
 	"name": "steam-client",
-	"version": "1.1.0",
+	"version": "1.1.2",
 	"description": "SteamClient from node-steam with proper versioning and more features",
 	"keywords": ["steam", "steam client"],
 	"homepage": "https://github.com/DoctorMcKay/node-steam-client",
@@ -26,7 +26,7 @@
 	"dependencies": {
 		"buffer-crc32": "^0.2.0",
 		"bytebuffer": "^5.0.0",
-		"steam-crypto": "^0.0.1",
+		"@doctormckay/steam-crypto": "^1.0.0",
 		"steam-resources": "seishun/node-steam-resources#v1.0.0"
 	},
 	"bundledDependencies": [

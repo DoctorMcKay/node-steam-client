@@ -25,7 +25,7 @@ dependencies (e.g. `"steam-client": "^1.0.0"`).
 
 First, `require` this module.
 ```js
-var Steam = require('steam');
+var Steam = require('steam-client');
 ```
 `Steam` is now a namespace object containing:
 * [CMClient class](#cmclient)
