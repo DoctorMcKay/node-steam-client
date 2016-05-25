@@ -26,7 +26,7 @@
 	"dependencies": {
 		"buffer-crc32": "^0.2.0",
 		"bytebuffer": "^5.0.0",
-		"@doctormckay/steam-crypto": "^1.0.0",
+		"@doctormckay/steam-crypto": "^1.1.0",
 		"steam-resources": "seishun/node-steam-resources#v1.0.0"
 	},
 	"bundledDependencies": [
