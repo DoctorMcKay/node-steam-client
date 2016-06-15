@@ -135,6 +135,12 @@ is only allowed while logged on.
 Your own SteamID while logged on, otherwise unspecified. Must be set to a valid initial value before sending a logon
 message ([logOn](#logondetails) does that for you).
 
+### remoteAddress
+
+**v2.1.0 or later is required to use this property**
+
+If connecting or connected, a string containing "ipv4:port" for the server we're connecting/connected to.
+
 ## Methods
 
 ### bind([localAddress][, localPort])
