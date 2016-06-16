@@ -139,7 +139,8 @@ message ([logOn](#logondetails) does that for you).
 
 **v2.1.0 or later is required to use this property**
 
-If connecting or connected, a string containing "ipv4:port" for the server we're connecting/connected to.
+If we've initiated a connection previously, a string containing "ipv4:port" for the server we're connecting/connected to.
+Also contains the address of the last host we were connected to if we're currently disconnected.
 
 ## Methods
 
