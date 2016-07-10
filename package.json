@@ -1,6 +1,6 @@
 {
 	"name": "steam-client",
-	"version": "2.1.1",
+	"version": "2.1.2",
 	"description": "SteamClient from node-steam with proper versioning and more features",
 	"keywords": ["steam", "steam client"],
 	"homepage": "https://github.com/DoctorMcKay/node-steam-client",
