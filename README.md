@@ -7,7 +7,9 @@
 [![paypal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N36YVAT42CZ4G&item_name=node%2dsteam%2dclient&currency_code=USD)
 
 This is a fork of [node-steam](https://www.npmjs.com/package/steam)'s SteamClient. Essentially it's node-steam without
-the handler modules and with some more features. It should be compatible with all node-steam handler modules.
+the handler modules and with some more features. It should be compatible with all node-steam handler modules, **as long
+as** you call the CMClient's own [`logOn`](#logondetails) method instead of node-steam's SteamUser `logOn` method.
+[node-steam-user](https://www.npmjs.com/package/steam-user)'s `logOn` method is perfectly safe.
 
 This exists because of how painfully slow it is to get new things implemented into node-steam, and also because of
 incompatibilities that can potentially arise between node-steam and third-party handler modules.
