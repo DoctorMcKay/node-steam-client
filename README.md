@@ -7,9 +7,8 @@
 [![paypal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=N36YVAT42CZ4G&item_name=node%2dsteam%2dclient&currency_code=USD)
 
 This is a fork of [node-steam](https://www.npmjs.com/package/steam)'s SteamClient. Essentially it's node-steam without
-the handler modules and with some more features. It should be compatible with all node-steam handler modules, **as long
-as** you call the CMClient's own [`logOn`](#logondetails) method instead of node-steam's SteamUser `logOn` method.
-[node-steam-user](https://www.npmjs.com/package/steam-user)'s `logOn` method is perfectly safe.
+the handler modules and with some more features. It should be compatible with all node-steam handler modules, as long
+as the underlying Steam protocol doesn't change without a third-party module's knowledge.
 
 This exists because of how painfully slow it is to get new things implemented into node-steam, and also because of
 incompatibilities that can potentially arise between node-steam and third-party handler modules.
@@ -135,7 +134,7 @@ is only allowed while logged on.
 ### steamID
 
 Your own SteamID while logged on, otherwise unspecified. Must be set to a valid initial value before sending a logon
-message ([logOn](#logondetails) does that for you).
+message.
 
 ### remoteAddress
 
@@ -171,8 +170,8 @@ attempt, cancels it.
 ### logOn(details)
 - `details` - An object containing your logon parameters
 
-Send a logon message to the CM. You must be connected first. You will receive the response in the
-[`logOnResponse`](#logonresponse) event.
+Send a logon message to the CM. You must first be connected and set [`steamID`](#steamid) to a valid initial value.
+You will receive the response in the [`logOnResponse`](#logonresponse) event.
 
 ### send(header, body, callback)
 - `header` - An object containing the message header. It has the following properties:
