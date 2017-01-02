@@ -36,6 +36,6 @@
 		"node": ">=4.1.1"
 	},
 	"scripts": {
-		"prepublish": "node scripts/prepublish.js"
+		"postinstall": "node scripts/getServerList.js"
 	}
 }
