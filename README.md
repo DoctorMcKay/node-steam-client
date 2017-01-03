@@ -38,16 +38,11 @@ Then you'll want to create an instance of CMClient and any handlers you need (ex
 [`node-steam-user`](https://www.npmjs.com/package/steam-user) do this automatically for you.
 
 ```js
-var steamClient = new Steam.CMClient();
-steamClient.connect();
-steamClient.on('connected', function() {
-    steamClient.logOn({
-        "account_name": "username",
-        "password": "password"
-    });
+var client = new Steam.CMClient();
+client.connect();
+client.on('connected', function() {
+    // log on or something
 });
-
-steamClient.on('logOnResponse', function(details) { /* ... */});
 ```
 
 # Constructor
@@ -77,7 +72,8 @@ var client = new Steam.CMClient(Steam.EConnectionProtocol.TCP);
 
 # Servers
 
-`Steam.servers` contains the list of CM servers that `CMClient` will attempt to connect to. The bootstrapped list is not
+`Steam.servers` contains the list of CM servers that `CMClient` will attempt to connect to. During module install, an
+attempt to retrieve the current server list is made, but if that fails we fall back to the one in this repo which is not
 always up-to-date and might contain dead servers. To avoid timeouts, replace it with your own list before logging in if
 you have one (see ['servers' event](#servers-1)).
 
@@ -128,13 +124,16 @@ A boolean that indicates whether you are currently connected and the encryption 
 
 ### loggedOn
 
-A boolean that indicates whether you are currently logged on. Calling any handler methods except for methods to log on
-is only allowed while logged on.
+A boolean that indicates whether you are currently logged on. This must be `true` for all messages types except those
+used in this module and logon message types.
+
+It is initially set to `false`.
 
 ### steamID
 
-Your own SteamID while logged on, otherwise unspecified. Must be set to a valid initial value before sending a logon
-message.
+A string representing the logged on users' SteamID.
+
+It is initially set to `null`.
 
 ### remoteAddress
 
@@ -167,12 +166,6 @@ Immediately terminates the connection and prevents any events (including ['error
 you [connect](#connect) again. If you are already disconnected, does nothing. If there is an ongoing connection
 attempt, cancels it.
 
-### logOn(details)
-- `details` - An object containing your logon parameters
-
-Send a logon message to the CM. You must first be connected and set [`steamID`](#steamid) to a valid initial value.
-You will receive the response in the [`logOnResponse`](#logonresponse) event.
-
 ### send(header, body, callback)
 - `header` - An object containing the message header. It has the following properties:
     - `msg` - A value from `EMsg`
@@ -185,19 +178,14 @@ You will receive the response in the [`logOnResponse`](#logonresponse) event.
 ### error
 - `err` - An `Error` object. May contain an `eresult` property.
 
-Connection closed by the server. Only emitted if the encryption handshake is complete, otherwise it will reconnect
+ - Connection closed by the server. Only emitted if the encryption handshake is complete, otherwise it will reconnect
 automatically (unless you disabled `autoRetry`). [`loggedOn`](#loggedon) is now `false`.
 
 ### connected
 - `serverLoad` - The load value of the CM server you're connected to. Only available if you're connecting using UDP. It's unclear at this time what scale this value uses.
 
 Encryption handshake complete. From now on, it's your responsibility to handle disconnections and reconnect
-(see [`error`](#error)). You'll likely want to [log on](#logondetails) now.
-
-### logOnResponse
-- `response` - An object with the properties in [`CMsgClientLogonResponse`](https://github.com/SteamRE/SteamKit/blob/master/Resources/Protobufs/steamclient/steammessages_clientserver.proto)
-
-Logon response received. If `eresult` is `EResult.OK`, [`loggedOn`](#loggedon) is now `true`.
+(see [`error`](#error)).
 
 ### servers
 - `servers` - An array containing the up-to-date server list
@@ -208,14 +196,9 @@ to save it to a file or a database and assign it to [`Steam.servers`](#servers) 
 Note that `Steam.servers` will be automatically updated *after* this event is emitted. This will be useful if you want
 to compare the old list with the new one for some reason - otherwise it shouldn't matter.
 
-### loggedOff
-- `eresult` - A value from `EResult`
-
-You were logged off from Steam. [`loggedOn`](#loggedon) is now `false`.
-
 ### message
 - `header` - An object containing the message header
 - `body` - A `Buffer` containing the rest of the message
 - `callback` - If set, then this message is a request and Steam expects a response back from you. To respond, call this callback instead of using `send()`.
 
- Emitted when you receive a message from the CM.
+Emitted when you receive a message from the CM.
