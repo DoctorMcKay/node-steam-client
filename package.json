@@ -1,41 +1,44 @@
 {
-	"name": "steam-client",
-	"version": "2.2.2",
-	"description": "SteamClient from node-steam with proper versioning and more features",
-	"keywords": ["steam", "steam client"],
-	"homepage": "https://github.com/DoctorMcKay/node-steam-client",
-	"bugs": {
-		"url": "https://github.com/DoctorMcKay/node-steam-client/issues"
-	},
-	"license": "MIT",
-	"author": {
-		"name": "Alexander Corn",
-		"email": "mckay@doctormckay.com",
-		"url": "https://www.doctormckay.com"
-	},
-	"contributors": [
-		{
-			"name": "Nicholas",
-			"email": "vvnicholas@gmail.com"
-		}
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/DoctorMcKay/node-steam-client.git"
-	},
-	"dependencies": {
-		"buffer-crc32": "^0.2.0",
-		"bytebuffer": "^5.0.0",
-		"@doctormckay/steam-crypto": "^1.1.0",
-		"steam-resources": "seishun/node-steam-resources#v1.0.0"
-	},
-	"bundledDependencies": [
-		"steam-resources"
-	],
-	"engines": {
-		"node": ">=4.1.1"
-	},
-	"scripts": {
-		"prepublish": "node scripts/prepublish.js"
-	}
+  "name": "steam-client",
+  "version": "3.0.0",
+  "description": "SteamClient from node-steam with proper versioning and more features",
+  "keywords": [
+    "steam",
+    "steam client"
+  ],
+  "homepage": "https://github.com/DoctorMcKay/node-steam-client",
+  "bugs": {
+    "url": "https://github.com/DoctorMcKay/node-steam-client/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Alexander Corn",
+    "email": "mckay@doctormckay.com",
+    "url": "https://www.doctormckay.com"
+  },
+  "contributors": [
+    {
+      "name": "Nicholas",
+      "email": "vvnicholas@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DoctorMcKay/node-steam-client.git"
+  },
+  "dependencies": {
+    "buffer-crc32": "^0.2.0",
+    "bytebuffer": "^5.0.0",
+    "@doctormckay/steam-crypto": "^1.1.0",
+    "steam-resources": "seishun/node-steam-resources#v1.0.0"
+  },
+  "bundledDependencies": [
+    "steam-resources"
+  ],
+  "engines": {
+    "node": ">=4.1.1"
+  },
+  "scripts": {
+    "postinstall": "node scripts/getServerList.js"
+  }
 }

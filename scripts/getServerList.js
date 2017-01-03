@@ -1,5 +1,3 @@
-// This file is run by npm prior to the package being published to the registry
-
 // Update the CM list
 require('http').get("http://api.steampowered.com/ISteamDirectory/GetCMList/v1/?format=json&cellid=0", function(res) {
 	var data = '';
@@ -11,7 +9,8 @@ require('http').get("http://api.steampowered.com/ISteamDirectory/GetCMList/v1/?f
 		var json = JSON.parse(data);
 
 		if (!json.response || json.response.result != 1) {
-			throw new Error("Cannot get CM list");
+			// not fatal, client will get an updated list on connect anyway
+			console.log("Cannot get current CM list");
 		}
 
 		var servers = json.response.serverlist.map(function (server) {

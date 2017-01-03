@@ -1,3 +1,6 @@
+'use strict';
+/* jshint node:true, esversion:6, latedef:nofunc */
+
 var Steam = module.exports = require('steam-resources');
 
 Steam._processProto = function(proto) {
