@@ -27,13 +27,14 @@
 		"url": "https://github.com/DoctorMcKay/node-steam-client.git"
 	},
 	"dependencies": {
-		"@doctormckay/steam-crypto": "^1.1.0",
-		"buffer-crc32": "^0.2.0",
+		"@doctormckay/steam-crypto": "^1.2.0",
+		"buffer-crc32": "^0.2.13",
 		"bytebuffer": "^5.0.0",
-		"steam-resources": "DoctorMcKay/node-steam-resources#v1.1.0"
+		"mckay-steam-resources": "github:DoctorMcKay/node-steam-resources#v1.1.1",
+		"steam-resources": "^1.0.0"
 	},
 	"bundledDependencies": [
-		"steam-resources"
+		"mckay-steam-resources"
 	],
 	"engines": {
 		"node": ">=4.1.1"
