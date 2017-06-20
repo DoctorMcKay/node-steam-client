@@ -2,7 +2,10 @@
 	"name": "steam-client",
 	"version": "2.3.0-beta1",
 	"description": "SteamClient from node-steam with proper versioning and more features",
-	"keywords": ["steam", "steam client"],
+	"keywords": [
+		"steam",
+		"steam client"
+	],
 	"homepage": "https://github.com/DoctorMcKay/node-steam-client",
 	"bugs": {
 		"url": "https://github.com/DoctorMcKay/node-steam-client/issues"
@@ -24,10 +27,10 @@
 		"url": "https://github.com/DoctorMcKay/node-steam-client.git"
 	},
 	"dependencies": {
+		"@doctormckay/steam-crypto": "^1.1.0",
 		"buffer-crc32": "^0.2.0",
 		"bytebuffer": "^5.0.0",
-		"@doctormckay/steam-crypto": "^1.1.0",
-		"steam-resources": "seishun/node-steam-resources#v1.0.0"
+		"steam-resources": "DoctorMcKay/node-steam-resources#v1.1.0"
 	},
 	"bundledDependencies": [
 		"steam-resources"
