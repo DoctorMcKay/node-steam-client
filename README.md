@@ -65,7 +65,7 @@ Default is TCP. **UDP support is experimental.** There are some pros and cons to
     - **Con:** If your app crashes or is killed without properly logging off or disconnecting, your session will remain active for a minute while Steam waits for it to timeout
     - **Con:** Currently support for UDP connections in `CMClient` is experimental
 - WebSocket
-    - **Pro:** More secure crypto. Uses TLS instead of Valve's proprietary crypto, which has been broken (and fixed in the past)
+    - **Pro:** More secure crypto. Uses TLSv1.2 instead of Valve's proprietary crypto, which has been broken (and fixed) in the past
     - **Pro:** Runs over TCP, so all the benefits of TCP
     - **Pro:** `CMClient`'s implementation of Valve's WebSocket protocol sends ping frames to the CM every 30 seconds, which the CM responds to, allowing for faster detection of dropped connections
     - **Pro:** Runs over port 443, allowing access through nearly all firewalls
