@@ -24,7 +24,8 @@ Steam._processProto = function(proto) {
  */
 Steam.EConnectionProtocol = {
 	"TCP": 1,
-	"UDP": 2
+	"UDP": 2,
+	"WebSocket": 3
 };
 
 require('./lib/cm_client.js');

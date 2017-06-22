@@ -22,6 +22,15 @@ require('http').get("http://api.steampowered.com/ISteamDirectory/GetCMList/v1/?f
 			};
 		});
 
+		var websockets = json.response.serverlist_websockets.map(function(server) {
+			var parts = server.split(':');
+			return {
+				"host": parts[0],
+				"port": parseInt(parts[1])
+			};
+		});
+
 		require('fs').writeFileSync(__dirname + '/../resources/servers.json', JSON.stringify(servers, null, "\t"));
+		require('fs').writeFileSync(__dirname + '/../resources/servers_websocket.json', JSON.stringify(websockets, null, "\t"));
 	});
 });

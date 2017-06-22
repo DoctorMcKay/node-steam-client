@@ -30,7 +30,8 @@
 		"@doctormckay/steam-crypto": "^1.2.0",
 		"buffer-crc32": "^0.2.13",
 		"bytebuffer": "^5.0.0",
-		"mckay-steam-resources": "github:DoctorMcKay/node-steam-resources#v1.1.1"
+		"mckay-steam-resources": "github:DoctorMcKay/node-steam-resources#v1.1.1",
+		"websocket13": "^1.5.1"
 	},
 	"bundledDependencies": [
 		"mckay-steam-resources"
