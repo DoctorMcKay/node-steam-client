@@ -32,6 +32,10 @@
 		"port": 443
 	},
 	{
+		"host": "cm04-lax.cm.steampowered.com",
+		"port": 443
+	},
+	{
 		"host": "cm02-lax.cm.steampowered.com",
 		"port": 443
 	},
@@ -40,11 +44,7 @@
 		"port": 443
 	},
 	{
-		"host": "cm01-lax.cm.steampowered.com",
-		"port": 443
-	},
-	{
-		"host": "cm04-lax.cm.steampowered.com",
+		"host": "cm03-ord.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -52,15 +52,15 @@
 		"port": 443
 	},
 	{
-		"host": "cm04-ord.cm.steampowered.com",
-		"port": 443
-	},
-	{
 		"host": "cm01-ord.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "cm03-ord.cm.steampowered.com",
+		"host": "cm04-ord.cm.steampowered.com",
+		"port": 443
+	},
+	{
+		"host": "cm01-lax.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -76,10 +76,6 @@
 		"port": 443
 	},
 	{
-		"host": "CM03-LON.cm.steampowered.com",
-		"port": 443
-	},
-	{
 		"host": "CM01-LON.cm.steampowered.com",
 		"port": 443
 	},
@@ -88,7 +84,15 @@
 		"port": 443
 	},
 	{
+		"host": "CM03-LON.cm.steampowered.com",
+		"port": 443
+	},
+	{
 		"host": "CM02-FRA.cm.steampowered.com",
+		"port": 443
+	},
+	{
+		"host": "CM03-FRA.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -104,15 +108,7 @@
 		"port": 443
 	},
 	{
-		"host": "CM03-FRA.cm.steampowered.com",
-		"port": 443
-	},
-	{
 		"host": "CM03-STO.cm.steampowered.com",
-		"port": 443
-	},
-	{
-		"host": "CM01-STO.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -124,7 +120,7 @@
 		"port": 443
 	},
 	{
-		"host": "CM02-VIE.cm.steampowered.com",
+		"host": "CM01-STO.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -132,7 +128,11 @@
 		"port": 443
 	},
 	{
-		"host": "CM01-TYO.cm.steampowered.com",
+		"host": "CM02-VIE.cm.steampowered.com",
+		"port": 443
+	},
+	{
+		"host": "CM02-TYO.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -140,7 +140,7 @@
 		"port": 443
 	},
 	{
-		"host": "CM01-SYD.cm.steampowered.com",
+		"host": "CM02-SGP.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -148,15 +148,11 @@
 		"port": 443
 	},
 	{
-		"host": "CM02-SGP.cm.steampowered.com",
+		"host": "CM01-TYO.cm.steampowered.com",
 		"port": 443
 	},
 	{
 		"host": "CM03-SGP.cm.steampowered.com",
-		"port": 443
-	},
-	{
-		"host": "CM02-TYO.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -168,19 +164,15 @@
 		"port": 443
 	},
 	{
-		"host": "CM-02-WAW1.cm.steampowered.com",
-		"port": 443
-	},
-	{
 		"host": "CM-01-WAW1.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM04-SHA.cm.steampowered.com",
+		"host": "CM-02-WAW1.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM01-SHA.cm.steampowered.com",
+		"host": "CM01-SYD.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -188,7 +180,15 @@
 		"port": 443
 	},
 	{
+		"host": "CM01-SHA.cm.steampowered.com",
+		"port": 443
+	},
+	{
 		"host": "CM02-SHA.cm.steampowered.com",
+		"port": 443
+	},
+	{
+		"host": "CM04-SHA.cm.steampowered.com",
 		"port": 443
 	},
 	{

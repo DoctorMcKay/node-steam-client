@@ -1,4 +1,4 @@
-var Steam = module.exports = require('mckay-steam-resources');
+var Steam = module.exports = require('./steam-resources');
 
 Steam._processProto = function(proto) {
 	proto = proto.toRaw(false, true);

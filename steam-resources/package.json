@@ -1,0 +1,21 @@
+{
+  "name": "mckay-steam-resources",
+  "version": "1.1.2",
+  "description": "Steam resources for Node.js",
+  "scripts": {
+    "build": "svn checkout https://github.com/SteamRE/SteamKit/trunk/Resources/Protobufs protobufs && svn checkout https://github.com/SteamRE/SteamKit/trunk/Resources/SteamLanguage steam_language && node steam_language_parser/shoehorn.js"
+  },
+  "dependencies": {
+    "bytebuffer": "^5.0",
+    "protobufjs": "^4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seishun/node-steam-resources"
+  },
+  "keywords": [
+    "steam"
+  ],
+  "author": "Nikolai Vavilov <vvnicholas@gmail.com>",
+  "license": "MIT"
+}
