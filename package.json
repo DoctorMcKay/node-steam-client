@@ -27,10 +27,15 @@
 		"url": "https://github.com/DoctorMcKay/node-steam-client.git"
 	},
 	"dependencies": {
+		"@doctormckay/proxy-agent": "^1.0.0",
 		"@doctormckay/steam-crypto": "^1.2.0",
+		"async": "^2.5.0",
 		"buffer-crc32": "^0.2.13",
 		"bytebuffer": "^5.0.0",
-		"websocket13": "^1.6.0"
+		"websocket13": "^1.6.1"
+	},
+	"devDependencies": {
+		"steam-user": "^3.21.6"
 	},
 	"engines": {
 		"node": ">=4.1.1"
