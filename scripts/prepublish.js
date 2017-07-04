@@ -30,6 +30,7 @@ require('http').get("http://api.steampowered.com/ISteamDirectory/GetCMList/v1/?f
 			};
 		});
 
+		websockets.sort(function(a, b) { return a.host < b.host ? -1 : 1; });
 		require('fs').writeFileSync(__dirname + '/../resources/servers.json', JSON.stringify(servers, null, "\t"));
 		require('fs').writeFileSync(__dirname + '/../resources/servers_websocket.json', JSON.stringify(websockets, null, "\t"));
 	});

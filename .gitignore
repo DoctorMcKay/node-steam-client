@@ -1,4 +1,3 @@
 node_modules/
 test.js
 resources/servers.json
-resources/servers_websocket.json
