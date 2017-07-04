@@ -30,7 +30,7 @@
 		"@doctormckay/steam-crypto": "^1.2.0",
 		"buffer-crc32": "^0.2.13",
 		"bytebuffer": "^5.0.0",
-		"websocket13": "^1.5.1"
+		"websocket13": "^1.6.0"
 	},
 	"engines": {
 		"node": ">=4.1.1"
