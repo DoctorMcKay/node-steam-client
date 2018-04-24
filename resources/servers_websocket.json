@@ -1,18 +1,14 @@
 [
 	{
-		"host": "CM-01-JNB1.cm.steampowered.com",
-		"port": 443
+		"host": "CM-01-OKC1.cm.steampowered.com",
+		"port": 27021
 	},
 	{
 		"host": "CM-01-OKC1.cm.steampowered.com",
-		"port": 443
+		"port": 27020
 	},
 	{
-		"host": "CM-01-WAW1.cm.steampowered.com",
-		"port": 443
-	},
-	{
-		"host": "CM-02-JNB1.cm.steampowered.com",
+		"host": "CM-01-OKC1.cm.steampowered.com",
 		"port": 443
 	},
 	{
@@ -20,16 +16,36 @@
 		"port": 443
 	},
 	{
+		"host": "CM-02-OKC1.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM-02-OKC1.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "CM-02-WAW1.cm.steampowered.com",
-		"port": 443
+		"port": 27020
+	},
+	{
+		"host": "CM01-FRA.cm.steampowered.com",
+		"port": 27021
 	},
 	{
 		"host": "CM01-FRA.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM01-HKG.cm.steampowered.com",
-		"port": 443
+		"host": "CM01-FRA.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM01-IAD.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM01-IAD.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM01-IAD.cm.steampowered.com",
@@ -37,31 +53,47 @@
 	},
 	{
 		"host": "CM01-LON.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM01-LON.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM01-LON.cm.steampowered.com",
 		"port": 443
+	},
+	{
+		"host": "CM01-LUX.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM01-LUX.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM01-SGP.cm.steampowered.com",
-		"port": 443
+		"host": "CM01-LUX.cm.steampowered.com",
+		"port": 27021
 	},
 	{
-		"host": "CM01-SHA.cm.steampowered.com",
-		"port": 443
+		"host": "CM01-STO.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM01-STO.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM01-SYD.cm.steampowered.com",
-		"port": 443
+		"host": "CM01-STO.cm.steampowered.com",
+		"port": 27021
 	},
 	{
-		"host": "CM01-TYO.cm.steampowered.com",
-		"port": 443
+		"host": "CM01-VIE.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM01-VIE.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM01-VIE.cm.steampowered.com",
@@ -69,51 +101,95 @@
 	},
 	{
 		"host": "CM02-FRA.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM02-FRA.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM02-HKG.cm.steampowered.com",
-		"port": 443
+		"host": "CM02-FRA.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM02-IAD.cm.steampowered.com",
+		"port": 27021
 	},
 	{
 		"host": "CM02-IAD.cm.steampowered.com",
 		"port": 443
 	},
 	{
+		"host": "CM02-IAD.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM02-LON.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "CM02-LON.cm.steampowered.com",
 		"port": 443
+	},
+	{
+		"host": "CM02-LON.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM02-LUX.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM02-LUX.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM02-SGP.cm.steampowered.com",
-		"port": 443
+		"host": "CM02-LUX.cm.steampowered.com",
+		"port": 27021
 	},
 	{
-		"host": "CM02-SHA.cm.steampowered.com",
-		"port": 443
+		"host": "CM02-STO.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM02-STO.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM02-SYD.cm.steampowered.com",
-		"port": 443
+		"host": "CM02-STO.cm.steampowered.com",
+		"port": 27021
 	},
 	{
-		"host": "CM02-TYO.cm.steampowered.com",
-		"port": 443
+		"host": "CM02-VIE.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM02-VIE.cm.steampowered.com",
 		"port": 443
 	},
 	{
+		"host": "CM02-VIE.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "CM03-FRA.cm.steampowered.com",
 		"port": 443
+	},
+	{
+		"host": "CM03-FRA.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM03-FRA.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM03-IAD.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM03-IAD.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM03-IAD.cm.steampowered.com",
@@ -124,28 +200,56 @@
 		"port": 443
 	},
 	{
-		"host": "CM03-SGP.cm.steampowered.com",
-		"port": 443
+		"host": "CM03-LON.cm.steampowered.com",
+		"port": 27021
 	},
 	{
-		"host": "CM03-SHA.cm.steampowered.com",
-		"port": 443
+		"host": "CM03-LON.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM03-STO.cm.steampowered.com",
 		"port": 443
 	},
 	{
+		"host": "CM03-STO.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM03-STO.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "CM04-IAD.cm.steampowered.com",
 		"port": 443
+	},
+	{
+		"host": "CM04-IAD.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM04-IAD.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM04-LON.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM04-LON.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM04-LON.cm.steampowered.com",
 		"port": 443
 	},
 	{
-		"host": "CM04-SHA.cm.steampowered.com",
-		"port": 443
+		"host": "CM04-STO.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM04-STO.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "CM04-STO.cm.steampowered.com",
@@ -156,12 +260,44 @@
 		"port": 443
 	},
 	{
+		"host": "CM05-IAD.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "CM05-IAD.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM06-IAD.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "CM06-IAD.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "CM06-IAD.cm.steampowered.com",
 		"port": 443
 	},
 	{
 		"host": "cm01-lax.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "cm01-lax.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "cm01-lax.cm.steampowered.com",
 		"port": 443
+	},
+	{
+		"host": "cm01-ord.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "cm01-ord.cm.steampowered.com",
+		"port": 27021
 	},
 	{
 		"host": "cm01-ord.cm.steampowered.com",
@@ -172,12 +308,44 @@
 		"port": 443
 	},
 	{
+		"host": "cm02-lax.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "cm02-lax.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "cm02-ord.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "cm02-ord.cm.steampowered.com",
 		"port": 443
 	},
 	{
+		"host": "cm02-ord.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "cm03-lax.cm.steampowered.com",
+		"port": 27020
+	},
+	{
 		"host": "cm03-lax.cm.steampowered.com",
 		"port": 443
+	},
+	{
+		"host": "cm03-lax.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "cm03-ord.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "cm03-ord.cm.steampowered.com",
+		"port": 27020
 	},
 	{
 		"host": "cm03-ord.cm.steampowered.com",
@@ -188,6 +356,22 @@
 		"port": 443
 	},
 	{
+		"host": "cm04-lax.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "cm04-lax.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "cm04-ord.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "cm04-ord.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "cm04-ord.cm.steampowered.com",
 		"port": 443
 	},
@@ -196,7 +380,23 @@
 		"port": 443
 	},
 	{
+		"host": "s3tuk-035b.cm.steampowered.com",
+		"port": 27021
+	},
+	{
+		"host": "s3tuk-035b.cm.steampowered.com",
+		"port": 27020
+	},
+	{
+		"host": "s3tuk-037a.cm.steampowered.com",
+		"port": 27021
+	},
+	{
 		"host": "s3tuk-037a.cm.steampowered.com",
 		"port": 443
+	},
+	{
+		"host": "s3tuk-037a.cm.steampowered.com",
+		"port": 27020
 	}
 ]
