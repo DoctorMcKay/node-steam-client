@@ -157,6 +157,12 @@ Also contains the address of the last host we were connected to if we're current
 
 Override the address and/or port that will be used for the outgoing connection. Takes effect the next time you connect.
 
+### setHttpProxy(proxyUrl)
+- `proxyUrl` - A string containing the URL of your HTTP proxy
+
+If you want to connect via an HTTP proxy, set the proxy URL using this method before connecting. HTTPS proxies are not
+supported at this time. Example: `http://user:pass@1.2.3.4:8080`
+
 ### connect([server][, autoRetry])
 - `server` - If you want to connect to a specific CM server, provide an object here containing `host` and `port` properties. Default is a random value from the [`servers`](#servers) property.
 - `autoRetry` - `true` if you want to automatically retry connection until successful, or `false` if you want an `error` event if connection fails. Default `true`.
